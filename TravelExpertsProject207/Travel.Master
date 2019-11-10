@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Travel.master.cs" Inherits="TravelExpertsProject207.Travel" %>
+
+<!DOCTYPE html>
+<!-- //Design and Coding Shiju Abraham 10-16-2019 @ Sait Project Term II -->
+<html>
+<head runat="server">
+         <!-- main css -->
+     <title> "TRAVEL EXPERTS"</title>
+
+    <link href="css/style.css" rel="stylesheet" />
+   <link rel="icon" href="img/favicon.png" type="image/png">
+       
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="woodcss/css/bootstrap.css">
+        <link rel="stylesheet" href="woodcssvendors/linericon/style.css">
+        <link rel="stylesheet" href="woodcss/css/font-awesome.min.css">
+        <link rel="stylesheet" href="woodcss/vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="woodcss/vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="woodcss/vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="woodcss/woodcss/vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="woodcss/vendors/flaticon/flaticon.css">
+        <!-- main css -->
+         <link href="woodcss/css/responsive.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/responsive.css">
+
+
+ 
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+                
+		    <header class="header_area">
+           	<div class="top_menu">
+           		<div class="container">
+           			<div class="top_inner">
+           				<div class="float-left">
+                                 <asp:LinkButton ID="LinkUserLogin" PostBackUrl="~/Login.aspx" runat="server"  OnClick="LinkButton100_Click"><i class="fa fa-sign-in" aria-hidden="true">Sign in</i></asp:LinkButton> 
+                                <asp:LinkButton ID="LinkUserlogout" PostBackUrl="~/LogoutUser.aspx" Visible="false" runat="server"><i class="fa fa-sign-in" aria-hidden="true">Sign out</i></asp:LinkButton> 
+                               <asp:Label ID="Labelusername" class="banner_btn"  runat="server" Visible="False" Text="Label" Height="50px" Width="183px"></asp:Label>
+                                
+                 
+           				</div>
+           				<div class="float-right">
+           					<ul class="list header_socila">
+           						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+           						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+           						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+           				 
+                                   <li class="checkout">
+									<a href="#">
+										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <asp:Label  ID="lblcart" runat="server" class="checkout_items" Text=""></asp:Label>
+										
+									</a>
+								</li>
+           					</ul>
+           				</div>
+           			    
+           			</div>
+           		</div>
+           	</div>
+
+            <div class="main_menu" id="mainNav">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="images/icon3.png" alt=""><img src="" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+							<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="Default.aspx">Home</a></li> 
+                                 <li class="nav-item"><a class="nav-link" href="Customer.aspx">Confirmation</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="Contact.aspx">Contact</a></li>
+							</ul>
+						</div> 
+		
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+         <!--================Footer Area =================-->
+        <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3>About Me</h3>
+        					</div>
+        					<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
+        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  by <a href="#" target="_blank">  SHIJU </a>
+ </p>
+        				</aside>
+        			</div>
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget news_widget">
+        					<div class="f_title">
+        						<h3>DROP YOUR EMAIL</h3>
+        					</div>
+        					<p>Stay updated with our latest trends
+                               
+                            </p>
+        				    <div id="mc_embed_signup">
+ 
+                                	<div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                                    </div>				
+                                    <div class="mt-10 info"></div>
+                              
+                            </div>
+        				</aside>
+        			</div>
+        			<div class="col-lg-2">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Follow Me<asp:Label ID="lbltextchange" runat="server" Text=" " Visible="False"></asp:Label>
+                                </h3>
+        					</div>
+        					<p>Let us be social</p>
+        					<ul class="list">
+        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
+        					</ul>
+        				</aside>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+    </form>
+     <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="woodcss/woodrox-doc/js/custom.js"></script>
+    <script src="woodcss/js/bootstrap.min.js"></script>
+    <script src="woodcss/js/jquery-3.2.1.min.js"></script>
+    <script src="woodcss/js/popper.js"></script>
+    <script src="woodcss/js/jquery.validate.min.js"></script>
+    <script src="woodcss/js/stellar.js"></script>
+    <script src="woodcss/js/gmaps.min.js"></script>
+
+  
+</body>
+</html>

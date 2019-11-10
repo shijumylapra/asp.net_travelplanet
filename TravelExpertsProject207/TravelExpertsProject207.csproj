@@ -1,0 +1,557 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A625E4EA-42F4-4239-8C55-0FEABC2ABB9E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TravelExpertsProject207</RootNamespace>
+    <AssemblyName>TravelExpertsProject207</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assetcss\css\bootstrap.min.css" />
+    <Content Include="assetcss\css\component.css" />
+    <Content Include="assetcss\css\cubeportfolio.min.css" />
+    <Content Include="assetcss\css\demo.css" />
+    <Content Include="assetcss\css\font-awesome.min.css" />
+    <Content Include="assetcss\css\fonts\linea-basic-10.svg" />
+    <Content Include="assetcss\css\icon-font.css" />
+    <Content Include="assetcss\css\icons-reference.html" />
+    <Content Include="assetcss\css\itsyStyle.css" />
+    <Content Include="assetcss\css\itsyStyle1.css" />
+    <Content Include="assetcss\css\magnific-popup.css" />
+    <Content Include="assetcss\css\slick.css" />
+    <Content Include="assetcss\css\styleasset.css" />
+    <Content Include="assetcss\fonts\fontawesome-webfont.svg" />
+    <Content Include="assetcss\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assetcss\img\1.jpg" />
+    <Content Include="assetcss\img\2.jpg" />
+    <Content Include="assetcss\img\3.jpg" />
+    <Content Include="assetcss\img\4.jpg" />
+    <Content Include="assetcss\img\5.jpg" />
+    <Content Include="assetcss\img\6.jpg" />
+    <Content Include="assetcss\img\7.jpg" />
+    <Content Include="assetcss\img\8.jpg" />
+    <Content Include="assetcss\img\9.jpg" />
+    <Content Include="assetcss\img\mike.png" />
+    <Content Include="assetcss\img\nic.png" />
+    <Content Include="assetcss\img\portfolio\img-1.jpg" />
+    <Content Include="assetcss\img\portfolio\img-2.jpg" />
+    <Content Include="assetcss\img\portfolio\img-3.jpg" />
+    <Content Include="assetcss\img\portfolio\img-4.jpg" />
+    <Content Include="assetcss\img\portfolio\img-5.jpg" />
+    <Content Include="assetcss\img\portfolio\img-6.jpg" />
+    <Content Include="assetcss\img\portfolio\img-7.jpg" />
+    <Content Include="assetcss\img\portfolio\img-8.jpg" />
+    <Content Include="assetcss\img\preloader.gif" />
+    <Content Include="assetcss\img\sample74.jpg" />
+    <Content Include="assetcss\img\sample84.jpg" />
+    <Content Include="assetcss\img\sample87.jpg" />
+    <Content Include="assetcss\img\showcasebg.jpg" />
+    <Content Include="assetcss\img\team-member.jpg" />
+    <Content Include="assetcss\js\bootstrap.min.js" />
+    <Content Include="assetcss\js\classie.js" />
+    <Content Include="assetcss\js\grid3d.js" />
+    <Content Include="assetcss\js\helper.js" />
+    <Content Include="assetcss\js\jquery.cubeportfolio.min.js" />
+    <Content Include="assetcss\js\jquery.flexslider-min.js" />
+    <Content Include="assetcss\js\jquery.matchHeight-min.js" />
+    <Content Include="assetcss\js\jquery.min.js" />
+    <Content Include="assetcss\js\masonry.pkgd.min.js" />
+    <Content Include="assetcss\js\modernizr.custom.js" />
+    <Content Include="assetcss\js\script.js" />
+    <Content Include="assetcss\js\scrollreveal.min.js" />
+    <Content Include="assetcss\js\slick.min.js" />
+    <Content Include="Confrmation.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="css\style.css" />
+    <Content Include="Customer.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Display.aspx" />
+    <Content Include="images\1banner.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\cus1.jpg" />
+    <Content Include="images\Cus2.jpg" />
+    <Content Include="images\homebanner.jpg" />
+    <Content Include="images\homebanner2.jpg" />
+    <Content Include="images\homeimage.jpg" />
+    <Content Include="images\icon.png" />
+    <Content Include="images\icon1.png" />
+    <Content Include="images\icon3.png" />
+    <Content Include="images\img_register.png" />
+    <Content Include="images\login1.jpg" />
+    <Content Include="images\logout.jpg" />
+    <Content Include="images\output.png" />
+    <Content Include="images\project-details-1.jpg" />
+    <Content Include="images\sample12.jpg" />
+    <Content Include="images\sample120.jpg" />
+    <Content Include="images\sample13.jpg" />
+    <Content Include="images\sample14.jpg" />
+    <Content Include="images\sample17.jpg" />
+    <Content Include="images\sample18.jpg" />
+    <Content Include="images\sample2.jpg" />
+    <Content Include="images\sample3.jpg" />
+    <Content Include="images\sample4.jpg" />
+    <Content Include="images\sara-dubler-Koei_7yYtIo-unsplash.jpg" />
+    <Content Include="images\sara1.jpg" />
+    <Content Include="images\shawn-lee-0sSJMTfLXUI-unsplash.jpg" />
+    <Content Include="images\usereg.jpg" />
+    <Content Include="images\wang-xi-RTrZvGlvlQc-unsplash.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="LogoutUser.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="woodcss\css\bootstrap.css" />
+    <Content Include="woodcss\css\breadcrumb.css" />
+    <Content Include="woodcss\css\font-awesome.min.css" />
+    <Content Include="woodcss\css\responsive.css" />
+    <Content Include="woodcss\css\_about.css" />
+    <Content Include="woodcss\css\_clients.css" />
+    <Content Include="woodcss\css\_event.css" />
+    <Content Include="woodcss\css\_feature.css" />
+    <Content Include="woodcss\css\_footer.css" />
+    <Content Include="woodcss\css\_price.css" />
+    <Content Include="woodcss\css\_projects.css" />
+    <Content Include="woodcss\css\_service.css" />
+    <Content Include="woodcss\css\_team.css" />
+    <Content Include="woodcss\css\_testimonials.css" />
+    <Content Include="woodcss\css\_work.css" />
+    <Content Include="woodcss\fonts\fontawesome-webfont.svg" />
+    <Content Include="woodcss\img\about-1.jpg" />
+    <Content Include="woodcss\img\banner\banner-2.jpg" />
+    <Content Include="woodcss\img\banner\banner-map.png" />
+    <Content Include="woodcss\img\banner\banner.jpg" />
+    <Content Include="woodcss\img\banner\home-banner.jpg" />
+    <Content Include="woodcss\img\banner\home-left-1.png" />
+    <Content Include="woodcss\img\blog\add.jpg" />
+    <Content Include="woodcss\img\blog\author.png" />
+    <Content Include="woodcss\img\blog\c1.jpg" />
+    <Content Include="woodcss\img\blog\c2.jpg" />
+    <Content Include="woodcss\img\blog\c3.jpg" />
+    <Content Include="woodcss\img\blog\c4.jpg" />
+    <Content Include="woodcss\img\blog\c5.jpg" />
+    <Content Include="woodcss\img\blog\c6.jpg" />
+    <Content Include="woodcss\img\blog\cat-post\cat-post-1.jpg" />
+    <Content Include="woodcss\img\blog\cat-post\cat-post-2.jpg" />
+    <Content Include="woodcss\img\blog\cat-post\cat-post-3.jpg" />
+    <Content Include="woodcss\img\blog\causes\causes-1.jpg" />
+    <Content Include="woodcss\img\blog\causes\causes-2.jpg" />
+    <Content Include="woodcss\img\blog\causes\causes-3.jpg" />
+    <Content Include="woodcss\img\blog\feature-img1.jpg" />
+    <Content Include="woodcss\img\blog\home-blog\home-blog-1.jpg" />
+    <Content Include="woodcss\img\blog\home-blog\home-blog-2.jpg" />
+    <Content Include="woodcss\img\blog\home-blog\home-blog-3.jpg" />
+    <Content Include="woodcss\img\blog\main-blog\m-blog-1.jpg" />
+    <Content Include="woodcss\img\blog\main-blog\m-blog-2.jpg" />
+    <Content Include="woodcss\img\blog\main-blog\m-blog-3.jpg" />
+    <Content Include="woodcss\img\blog\main-blog\m-blog-4.jpg" />
+    <Content Include="woodcss\img\blog\main-blog\m-blog-5.jpg" />
+    <Content Include="woodcss\img\blog\next.jpg" />
+    <Content Include="woodcss\img\blog\popular-post\post1.jpg" />
+    <Content Include="woodcss\img\blog\popular-post\post2.jpg" />
+    <Content Include="woodcss\img\blog\popular-post\post3.jpg" />
+    <Content Include="woodcss\img\blog\popular-post\post4.jpg" />
+    <Content Include="woodcss\img\blog\post-img1.jpg" />
+    <Content Include="woodcss\img\blog\post-img2.jpg" />
+    <Content Include="woodcss\img\blog\prev.jpg" />
+    <Content Include="woodcss\img\clients-logo\c-logo-1.png" />
+    <Content Include="woodcss\img\clients-logo\c-logo-2.png" />
+    <Content Include="woodcss\img\clients-logo\c-logo-3.png" />
+    <Content Include="woodcss\img\clients-logo\c-logo-4.png" />
+    <Content Include="woodcss\img\clients-logo\c-logo-5.png" />
+    <Content Include="woodcss\img\elements\a.jpg" />
+    <Content Include="woodcss\img\elements\a2.jpg" />
+    <Content Include="woodcss\img\elements\d.jpg" />
+    <Content Include="woodcss\img\elements\disabled-check.png" />
+    <Content Include="woodcss\img\elements\disabled-radio.png" />
+    <Content Include="woodcss\img\elements\f1.jpg" />
+    <Content Include="woodcss\img\elements\f2.jpg" />
+    <Content Include="woodcss\img\elements\f3.jpg" />
+    <Content Include="woodcss\img\elements\f4.jpg" />
+    <Content Include="woodcss\img\elements\f5.jpg" />
+    <Content Include="woodcss\img\elements\f6.jpg" />
+    <Content Include="woodcss\img\elements\f7.jpg" />
+    <Content Include="woodcss\img\elements\f8.jpg" />
+    <Content Include="woodcss\img\elements\g1.jpg" />
+    <Content Include="woodcss\img\elements\g2.jpg" />
+    <Content Include="woodcss\img\elements\g3.jpg" />
+    <Content Include="woodcss\img\elements\g4.jpg" />
+    <Content Include="woodcss\img\elements\g5.jpg" />
+    <Content Include="woodcss\img\elements\g6.jpg" />
+    <Content Include="woodcss\img\elements\g7.jpg" />
+    <Content Include="woodcss\img\elements\g8.jpg" />
+    <Content Include="woodcss\img\elements\primary-check.png" />
+    <Content Include="woodcss\img\elements\primary-radio.png" />
+    <Content Include="woodcss\img\elements\success-check.png" />
+    <Content Include="woodcss\img\elements\success-radio.png" />
+    <Content Include="woodcss\img\elements\user1.png" />
+    <Content Include="woodcss\img\elements\user2.png" />
+    <Content Include="woodcss\img\favicon.png" />
+    <Content Include="woodcss\img\furniture\furniture-1.jpg" />
+    <Content Include="woodcss\img\furniture\furniture-2.jpg" />
+    <Content Include="woodcss\img\furniture\furniture-3.jpg" />
+    <Content Include="woodcss\img\instagram\Image-01.jpg" />
+    <Content Include="woodcss\img\instagram\Image-02.jpg" />
+    <Content Include="woodcss\img\instagram\Image-03.jpg" />
+    <Content Include="woodcss\img\instagram\Image-04.jpg" />
+    <Content Include="woodcss\img\instagram\Image-05.jpg" />
+    <Content Include="woodcss\img\instagram\Image-06.jpg" />
+    <Content Include="woodcss\img\instagram\Image-07.jpg" />
+    <Content Include="woodcss\img\instagram\Image-08.jpg" />
+    <Content Include="woodcss\img\logo-2.png" />
+    <Content Include="woodcss\img\logo.png" />
+    <Content Include="woodcss\img\notify-bg.jpg" />
+    <Content Include="woodcss\img\our-blog\our-blog-1.jpg" />
+    <Content Include="woodcss\img\our-blog\our-blog-2.jpg" />
+    <Content Include="woodcss\img\our-blog\our-blog-3.jpg" />
+    <Content Include="woodcss\img\project-details-1.jpg" />
+    <Content Include="woodcss\img\projects\projects-1.jpg" />
+    <Content Include="woodcss\img\projects\projects-2.jpg" />
+    <Content Include="woodcss\img\projects\projects-3.jpg" />
+    <Content Include="woodcss\img\projects\projects-4.jpg" />
+    <Content Include="woodcss\js\bootstrap.min.js" />
+    <Content Include="woodcss\js\contact.js" />
+    <Content Include="woodcss\js\custom.js" />
+    <Content Include="woodcss\js\gmaps.min.js" />
+    <Content Include="woodcss\js\jquery-3.2.1.min.js" />
+    <Content Include="woodcss\js\jquery.ajaxchimp.min.js" />
+    <Content Include="woodcss\js\jquery.form.js" />
+    <Content Include="woodcss\js\jquery.validate.min.js" />
+    <Content Include="woodcss\js\mail-script.js" />
+    <Content Include="woodcss\js\popper.js" />
+    <Content Include="woodcss\js\stellar.js" />
+    <Content Include="woodcss\js\theme.js" />
+    <Content Include="woodcss\vendors\animate-css\animate.css" />
+    <Content Include="woodcss\vendors\animate-css\wow.min.js" />
+    <Content Include="woodcss\vendors\bootstrap-datepicker\bootstrap-datetimepicker.min.css" />
+    <Content Include="woodcss\vendors\bootstrap-datepicker\bootstrap-datetimepicker.min.js" />
+    <Content Include="woodcss\vendors\bootstrap-datepicker\bootstrap-select.css" />
+    <Content Include="woodcss\vendors\bootstrap-datepicker\bootstrap-select.js" />
+    <Content Include="woodcss\vendors\counter-up\jquery.counterup.min.js" />
+    <Content Include="woodcss\vendors\counter-up\jquery.waypoints.min.js" />
+    <Content Include="woodcss\vendors\flaticon\flaticon.css" />
+    <Content Include="woodcss\vendors\flaticon\Flaticon.svg" />
+    <Content Include="woodcss\vendors\flipclock\timer.js" />
+    <Content Include="woodcss\vendors\isotope\imagesloaded.pkgd.min.js" />
+    <Content Include="woodcss\vendors\isotope\isotope-min.js" />
+    <Content Include="woodcss\vendors\jquery-ui\jquery-ui.css" />
+    <Content Include="woodcss\vendors\jquery-ui\jquery-ui.js" />
+    <Content Include="woodcss\vendors\lightbox\simpleLightbox.css" />
+    <Content Include="woodcss\vendors\lightbox\simpleLightbox.min.js" />
+    <Content Include="woodcss\vendors\linericon\fonts\Linearicons-Free.svg" />
+    <Content Include="woodcss\vendors\linericon\style.css" />
+    <Content Include="woodcss\vendors\nice-select\css\nice-select.css" />
+    <Content Include="woodcss\vendors\nice-select\css\style.css" />
+    <Content Include="woodcss\vendors\nice-select\js\jquery.nice-select.js" />
+    <Content Include="woodcss\vendors\nice-select\js\jquery.nice-select.min.js" />
+    <Content Include="woodcss\vendors\owl-carousel\assets\ajax-loader.gif" />
+    <Content Include="woodcss\vendors\owl-carousel\assets\animated.css" />
+    <Content Include="woodcss\vendors\owl-carousel\assets\owl.carousel.css" />
+    <Content Include="woodcss\vendors\owl-carousel\owl.carousel.min.css" />
+    <Content Include="woodcss\vendors\owl-carousel\owl.carousel.min.js" />
+    <Content Include="woodcss\woodrox-doc\css\font-awesome.min.css" />
+    <Content Include="woodcss\woodrox-doc\css\main.css" />
+    <Content Include="woodcss\woodrox-doc\css\normalize.min.css" />
+    <Content Include="woodcss\woodrox-doc\fonts\fontawesome-webfont.svg" />
+    <Content Include="woodcss\woodrox-doc\img\logo.png" />
+    <Content Include="woodcss\woodrox-doc\index.html" />
+    <Content Include="woodcss\woodrox-doc\js\custom.js" />
+    <Content Include="woodcss\woodrox-doc\js\jquery-1.11.0.min.js" />
+    <Content Include="woodcss\woodrox-doc\js\jquery.nav.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shAutoloader.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushAppleScript.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushAS3.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushBash.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushColdFusion.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushCpp.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushCSharp.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushCss.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushDelphi.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushDiff.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushErlang.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushGroovy.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushJava.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushJavaFX.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushJScript.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushPerl.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushPhp.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushPlain.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushPowerShell.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushPython.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushRuby.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushSass.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushScala.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushSql.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushVb.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shBrushXml.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shCore.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\scripts\shLegacy.js" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shCore.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shCoreDefault.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shCoreDjango.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shCoreEclipse.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shCoreEmacs.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shCoreFadeToGrey.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shCoreMDUltra.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shCoreMidnight.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shCoreRDark.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shThemeDefault.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shThemeDjango.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shThemeEclipse.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shThemeEmacs.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shThemeFadeToGrey.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shThemeMDUltra.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shThemeMidnight.css" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\styles\shThemeRDark.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Confrmation.aspx.cs">
+      <DependentUpon>Confrmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Confrmation.aspx.designer.cs">
+      <DependentUpon>Confrmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.aspx.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer.aspx.designer.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogoutUser.aspx.cs">
+      <DependentUpon>LogoutUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogoutUser.aspx.designer.cs">
+      <DependentUpon>LogoutUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Travel.Master.cs">
+      <DependentUpon>Travel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Travel.Master.designer.cs">
+      <DependentUpon>Travel.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assetcss\css\.DS_Store" />
+    <Content Include="assetcss\css\fonts\.DS_Store" />
+    <Content Include="assetcss\css\fonts\linea-basic-10.eot" />
+    <Content Include="assetcss\css\fonts\linea-basic-10.ttf" />
+    <Content Include="assetcss\css\fonts\linea-basic-10.woff" />
+    <Content Include="assetcss\fonts\.DS_Store" />
+    <Content Include="assetcss\fonts\fontawesome-webfont.eot" />
+    <Content Include="assetcss\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assetcss\fonts\fontawesome-webfont.woff" />
+    <Content Include="assetcss\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assetcss\fonts\FontAwesome.otf" />
+    <Content Include="assetcss\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assetcss\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assetcss\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assetcss\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assetcss\img\.DS_Store" />
+    <Content Include="assetcss\js\.DS_Store" />
+    <None Include="packages.config" />
+    <Content Include="Travel.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="woodcss\css\breadcrumb.css.map" />
+    <Content Include="woodcss\css\style.css.map" />
+    <Content Include="woodcss\css\_about.css.map" />
+    <Content Include="woodcss\css\_clients.css.map" />
+    <Content Include="woodcss\css\_event.css.map" />
+    <Content Include="woodcss\css\_feature.css.map" />
+    <Content Include="woodcss\css\_footer.css.map" />
+    <Content Include="woodcss\css\_price.css.map" />
+    <Content Include="woodcss\css\_projects.css.map" />
+    <Content Include="woodcss\css\_service.css.map" />
+    <Content Include="woodcss\css\_team.css.map" />
+    <Content Include="woodcss\css\_testimonials.css.map" />
+    <Content Include="woodcss\css\_work.css.map" />
+    <Content Include="woodcss\fonts\fontawesome-webfont.eot" />
+    <Content Include="woodcss\fonts\fontawesome-webfont.ttf" />
+    <Content Include="woodcss\fonts\fontawesome-webfont.woff" />
+    <Content Include="woodcss\fonts\fontawesome-webfont.woff2" />
+    <Content Include="woodcss\fonts\FontAwesome.otf" />
+    <Content Include="woodcss\img\.DS_Store" />
+    <Content Include="woodcss\img\elements\_DS_Store" />
+    <Content Include="woodcss\scss\breadcrumb.scss" />
+    <Content Include="woodcss\scss\style.scss" />
+    <Content Include="woodcss\scss\_blog.scss" />
+    <Content Include="woodcss\scss\_button.scss" />
+    <Content Include="woodcss\scss\_clients.scss" />
+    <Content Include="woodcss\scss\_contact.scss" />
+    <Content Include="woodcss\scss\_elements.scss" />
+    <Content Include="woodcss\scss\_feature.scss" />
+    <Content Include="woodcss\scss\_footer.scss" />
+    <Content Include="woodcss\scss\_header.scss" />
+    <Content Include="woodcss\scss\_predefine.scss" />
+    <Content Include="woodcss\scss\_projects.scss" />
+    <Content Include="woodcss\scss\_variables.scss" />
+    <Content Include="woodcss\vendors\.DS_Store" />
+    <Content Include="woodcss\vendors\flaticon\Flaticon.eot" />
+    <Content Include="woodcss\vendors\flaticon\Flaticon.ttf" />
+    <Content Include="woodcss\vendors\flaticon\Flaticon.woff" />
+    <Content Include="woodcss\vendors\linericon\fonts\Linearicons-Free.eot" />
+    <Content Include="woodcss\vendors\linericon\fonts\Linearicons-Free.ttf" />
+    <Content Include="woodcss\vendors\linericon\fonts\Linearicons-Free.woff" />
+    <Content Include="woodcss\vendors\linericon\fonts\Linearicons-Free.woff2" />
+    <Content Include="woodcss\woodrox-doc\.DS_Store" />
+    <Content Include="woodcss\woodrox-doc\css\_DS_Store" />
+    <Content Include="woodcss\woodrox-doc\fonts\fontawesome-webfont.eot" />
+    <Content Include="woodcss\woodrox-doc\fonts\fontawesome-webfont.ttf" />
+    <Content Include="woodcss\woodrox-doc\fonts\fontawesome-webfont.woff" />
+    <Content Include="woodcss\woodrox-doc\fonts\FontAwesome.otf" />
+    <Content Include="woodcss\woodrox-doc\fonts\_DS_Store" />
+    <Content Include="woodcss\woodrox-doc\js\_DS_Store" />
+    <Content Include="woodcss\woodrox-doc\syntax-highlighter\_DS_Store" />
+    <Content Include="woodcss\woodrox-doc\_DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebClassLibrary\WebClassLibrary.csproj">
+      <Project>{424a9066-6da6-4279-803c-efd645b538f7}</Project>
+      <Name>WebClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Appdata\" />
+    <Folder Include="js\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59754</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59754/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
